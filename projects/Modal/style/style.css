@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.none {
+    display: none;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, red, blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toModal {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 25px;
+    padding: 10px 20px;
+    background-color: aqua;
+    color: #fff;
+    box-shadow: 0 0 15px aqua;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.toModal:hover {
+    background-color: rgb(95, 248, 248);
+    box-shadow: 0 0 35px aqua;
+}
+
+.modal-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(127, 255, 212, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    visibility: hidden;
+    z-index: -10;
+}
+
+.modal {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0 0 15px 2px aqua;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.open-modal {
+    visibility: visible;
+    z-index: 10;
+}
+
+.modal p {
+    font-size: 20px;
+}
+
+.modal .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close-btn {
+    padding: 5px 10px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.close-btn:hover {
+    box-shadow: 0 0 15px red;
+}
+
+.close-btn:active {
+    background-color: rgb(255, 181, 181);
+}
+
+.abs {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 25px;
+    padding: 10px 20px;
+    background-color: aqua;
+    color: #fff;
+    box-shadow: 0 0 15px aqua;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.abs:hover {
+    background-color: rgb(95, 248, 248);
+    box-shadow: 0 0 35px aqua;
+    color: red;
+}
+
+.container input {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: 20px;
+    left: 20px;
+    border: none;
+}
+
+.container input:focus {
+    outline: none;
+}

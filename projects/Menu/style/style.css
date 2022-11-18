@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Narrow', sans-serif;
+}
+
+.menu {
+    width: 100%;
+    background-color: rgb(252, 252, 252);
+}
+
+.wrapper {
+    width: 65%;
+    margin: 0 auto;
+}
+
+/* Start menu header */
+
+.main-menu {
+    padding: 80px 0;
+}
+
+.menu-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-title {
+    width: 300px;
+    font-size: 43px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(55, 55, 58);
+    letter-spacing: 4px;
+    position: relative;
+    text-align: center;
+}
+
+.menu-title::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 30%;
+    height: 4px;
+    left: 106px;
+    top: 55px;
+    background-color: rgb(199, 130, 3);
+    margin: 0 auto;
+}
+
+.menu-btns {
+    padding: 50px;
+}
+
+.menu-lists {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.menu-links {
+    font-size: 20px;
+    color: rgb(199, 130, 3);
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid rgb(199, 130, 3);
+    border-radius: 5px;
+    transition: all 0.2s linear;
+}
+
+.menu-links:hover {
+    background-color: rgb(199, 130, 3);
+    color: rgb(252, 252, 252);
+}
+
+
+.active {
+    background-color: rgb(199, 130, 3);
+    color: rgb(252, 252, 252);
+}
+
+.search {
+    width: 300px;
+    height: 35px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    padding: 5px 10px;
+    border: 2px solid rgb(199, 130, 3);
+    border-radius: 5px;
+}
+
+.search:focus {
+    outline-color: rgb(199, 130, 3);
+}
+
+/* End menu header */
+
+/* Start menu info list */
+
+.menu-info-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.menu-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.menu-left img {
+    width: 230px;
+    height: 150px;
+    border: 4px solid rgb(199, 130, 3);
+    border-radius: 10px;
+}
+
+.menu-title-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted #000;
+    padding-bottom: 6px;
+}
+
+.menu-title-price :is(h3, p>span) {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.menu-title-price p>span {
+    color: rgb(199, 130, 3);
+    font-weight: bold;
+}
+
+.menu-text p {
+    font-size: 20px;
+    text-align: justify;
+    color: rgb(72, 70, 85);
+    padding-top: 12px;
+}
+
+/* End menu info list */
